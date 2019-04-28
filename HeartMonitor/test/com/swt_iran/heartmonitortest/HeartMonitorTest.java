@@ -1,6 +1,7 @@
 package com.swt_iran.heartmonitortest;
 
 import com.swt_iran.heartmonitor.HeartMonitor;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -11,5 +12,6 @@ class HeartMonitorTest {
         HeartMonitor monitor = new HeartMonitor();
 
         monitor.doSomething();
+        Assertions.assertEquals(0,1);
     }
 }
